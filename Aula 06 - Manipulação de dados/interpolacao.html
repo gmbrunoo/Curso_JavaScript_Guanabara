@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu primeiro programa</title>
+</head>
+<body>
+
+  <h1>Olá Mundo!</h1>
+  <p>Porque é melhor não arriscar.</p>
+
+  <script>
+
+    // window.prompt("Digite um número: ") --> Retorna uma string
+    // (number + number) ele soma
+    // (string + string) ele concatena
+
+    /* 
+    ** - Converter para Number - **
+    ** Number.parseFloat() **
+    ** Number.parseInt() **
+    ** Number() **
+    */
+
+    /* 
+    ** - Converter para String - **
+    ** soma.toString() **
+    ** String(soma)
+    */
+
+    /* 
+    ** - Formatando string - **
+    ** 'Eu estou aprendendo s' // Não faz interpolação **
+    ** 'Eu estou aprendendo ' + s // usa concatenação **
+    ** `Eu estou aprendendo ${s}` // usa template string **
+    */
+
+    var n1 = Number(window.prompt("Digite um número: "))
+    var n2 = Number(window.prompt("Digite outro número: "))
+    var soma = n1 + n2;
+    window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
+
+  </script>
+</body>
+</html>
