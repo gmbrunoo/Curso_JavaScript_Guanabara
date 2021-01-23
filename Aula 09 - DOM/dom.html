@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body>
+
+  <h1>Iniciando com DOM</h1>
+  <p>Aqui vai o resultado</p>
+  <p>Aprendendo <strong>DOM</strong> em Javascript</p>
+  <div class="msg" id ='msg'>Clique aqui</div>
+
+  <script>
+    var corpo = document.body
+    var p1 = document.getElementsByTagName('p')[1]
+
+    document.write(p1.innerText) // pega só o texto
+    // document.write(p1.innerHTML) pega as tag strong
+    // corpo.style.background = 'cyan'
+    // p1.style.color = 'yellow'
+
+    // var d = document.getElementById("msg")
+    // var d = document.getElementsByClassName("msg")
+    // d.style.background = 'blue'
+    // d.innerText = "Mudei o Texto"
+    // d.style.color = 'white'
+
+    var d = document.querySelector("div#msg")
+    // var d = document.querySelector("div.msg")
+    d.style.color = 'cyan'
+  </script>
+
+</body>
+</html>
