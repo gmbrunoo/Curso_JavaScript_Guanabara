@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de países</title>
+
+  <style>
+   
+  </style>
+</head>
+<body>
+
+  <h1>Em que país voce vive</h1>
+  Qual o nome do seu país <input type="text" name="pais" id="pais">
+  <input type="button" value="Verificar" onclick="verificar()">
+  <div id="res"></div>
+
+  <script>
+function verificar() {
+    var txt = document.getElementById("pais");
+    var res = document.getElementById("res");
+
+    resultado = txt.value;
+
+    if(resultado != "Brasil"){
+      res.innerHTML += `<p> Você é Estrangeiro</p>`
+      res.innerHTML += `<p> Seja muito bem vindo!</p>` 
+    }else{
+      res.innerHTML += `<p> Você é Brasileiro </p>`
+      res.innerHTML += `<p> A casa é sua!</p>` 
+    }
+    
+  }
+  </script>
+
+</body>
+</html>
